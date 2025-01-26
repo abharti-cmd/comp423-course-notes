@@ -2,3 +2,15 @@
 
 * Primary author: [Arya Bharti](https://github.com/abharti-cmd)
 * Reviewer: [Hamsini Tankala](https://github.com/htankala)
+
+
+# Example shell command
+mkdir go-devcontainer-tutorial
+
+cd go-devcontainer-tutorial
+
+!!! note "Why use Git?"
+    Using Git ensures your project changes are tracked and simplifies collaboration with others.
+
+def greet():
+    print("Hello, World!")

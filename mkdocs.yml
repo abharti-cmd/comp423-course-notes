@@ -3,6 +3,5 @@ theme:
   name: material
 
 markdown_extensions:
-  - codehilite        # Syntax highlighting for code blocks
+  - codehilite        # Add's syntax highlighting for code blocks
   - admonition        # Callouts for notes, warnings, etc.
-  - toc               # Table of contents
