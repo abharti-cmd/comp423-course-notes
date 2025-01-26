@@ -16,10 +16,3 @@ def greet():
     print("Hello, World!")
 Example of Toc:
 
-# Title of the Document
-
-## Section 1
-### Subsection 1.1
-### Subsection 1.2
-
-## Section 2
