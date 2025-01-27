@@ -39,15 +39,18 @@ git commit -m "Initial commit with README"
 ```
 
 # Part 2: Setting Up the DevContainer
-##Step 1. Add Development Container Configuration
+## Step 1. Add Development Container Configuration
 **(A)** Create a .devcontainer directory:
 ```bash
 mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 ```
+**(B)** Open project in VSCode:
+```bash
+code . 
+```
 
-
-**(B)** Add the following content to devcontainer.json:
+**(C)** Add the following content to devcontainer.json:
 ```json
 {
   "name": "Go Dev Container",
@@ -62,15 +65,12 @@ touch .devcontainer/devcontainer.json
   }
 }
 ```
-##Step 2: Add requirements.txt Python Dependency Configuration
-```bash
-requirements.txt
-```
-The requirements.txt file lists the Python dependencies needed for the project. It should be in your project's root directory. Here, you only need to include mkdocs-material pinned to a specific minor version its current release:
-```bash
-mkdocs-material~=9.5
-```
-##Step 3. Reopen the Project in a VSCode Dev Container
+
+!!! note "What is a DevContainer?"
+    A DevContainer is a development environment defined by configuration files, enabling a consistent and isolated workspace. It uses Docker to manage the container.
+
+
+##Step 2. Reopen the Project in a VSCode Dev Container
 Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
 Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running ``` go version``` to see your dev container is running a recent version of Go without much effort! 
@@ -83,6 +83,7 @@ mkdir src
 cd src
 touch main.go
 ```
+
 **(B)** Add the following code to main.go:
 ```bash
 package main
@@ -94,8 +95,8 @@ func main() {
 }
 ```
 
-#Part 4: Running and Building the Go Program
-##Step 1. Run the Program
+# Part 4: Running and Building the Go Program
+## Step 1. Run the Program
 **(A)** Verify the Go installation in the container:
 ```bash
 go version
@@ -106,9 +107,9 @@ go mod init go-tutorial-426
 ```
 **(C)** Run the program:
 ```bash
-go run main.go
+go run main.go 
 ```
-
+"//go src/run main.go"
 !!! example "Expected Output"
     When you run the program, you should see the following output in your terminal:
     ```
