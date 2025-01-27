@@ -1,10 +1,16 @@
 site_name: COMP423 Course Notes
 theme:
   name: material
+  palette:
+    primary: "blue"
+    accent: "light blue"
+  code_style: monokai
 
 markdown_extensions:
   - codehilite        # Add's syntax highlighting for code blocks
   - admonition        # Callouts for notes, warnings, etc.
   - toc 
+  - pymdownx.superfences
+  - pymdownx.highlight
 
 
